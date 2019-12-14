@@ -47,9 +47,11 @@ output_file_handle = open(output_file_name, 'wb')  # Open file for writing
 for row in reversed(range(120)):
     for col in range(160):
         offset = 54 + (row*160 + col)*4
-        (r,g,b,a) = data[offset:offset+4]
+        (b,g,r,a) = data[offset:offset+4]
         # Convert 32-bit RGB to 8-bit colour palette
-        val = (r//32)*32 + (g//32)*4 + (b//64)
+        # Use 6 values for r, 7 values for g, and 6 values for b
+        val = (r*6//256)*42 + (g*7//256)*6 + (b*6//256)
+        #val = (r//32)*32 + (g//32)*4 + (b//64)
         output_file_handle.write(bytes([val]))
     for col in range(640-160):
         output_file_handle.write(bytes([0]))
