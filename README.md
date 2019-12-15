@@ -24,3 +24,7 @@ I've added a simple graphical display that shows the solution in progress.
 This is still a work-in-progress. This is an attempt at simulating
 annealing/aggregation of small particles, which after a (long) time generates
 fractal-like images resembling snow flakes.
+
+## FEIGEN
+This displays a birfurcation diagram of the
+[logistic map](https://en.wikipedia.org/wiki/Logistic_map).
