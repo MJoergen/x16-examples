@@ -28,3 +28,6 @@ fractal-like images resembling snow flakes.
 ## FEIGEN
 This displays a birfurcation diagram of the
 [logistic map](https://en.wikipedia.org/wiki/Logistic_map).
+
+## SUDOKU
+A simple brute-force sudoku solver. It shows the current progress.
