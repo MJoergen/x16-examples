@@ -31,3 +31,8 @@ This displays a birfurcation diagram of the
 
 ## SUDOKU
 A simple brute-force sudoku solver. It shows the current progress.
+
+## TENNIS
+A variant of the pong game. The game gets gradually more and more difficult, by
+having the ball increase in speed as well as letting the opponent move faster.
+My high score so far is 1950 points :-)
